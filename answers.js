@@ -42,6 +42,8 @@ console.log (returnCharAndNumber(" ", 5));
 
 console.log (returnCharAndNumber("Boston", 25));
 
+/* question 4 add numbers */
+
 function addNumbers (n1, n2) {
     return n1 + n2;
 }
@@ -49,9 +51,21 @@ console.log (addNumbers (4, 7))
 console.log (addNumbers (44, 746))
 console.log (addNumbers ("banana", 7))
 
-/* running "banana" caused a mild hissy fit because "banana" is not defined */
+/* banana 7, then banana chair */
 
 console.log (addNumbers ("banana", "chair"))
+
+/* question 5 add then multiply */
+
+function addNumbersAndMultiply (n1, n2) {
+    return n1 * n2; 
+}
+
+console.log (addNumbersAndMultiply(4, 7));
+console.log (addNumbersAndMultiply(44, 117));
+console.log (addNumbersAndMultiply(444, 7));
+console.log (addNumbersAndMultiply("cat", 7));
+
 
 
 
