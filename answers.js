@@ -66,6 +66,38 @@ console.log (addNumbersAndMultiply(44, 117));
 console.log (addNumbersAndMultiply(444, 7));
 console.log (addNumbersAndMultiply("cat", 7));
 
+/* need numbers, words give NaN */
+
+
+// question 6 if string is add
+
+function addAndSubString(string, n1, n2) {
+    if (string === "add") {
+        return n1 + n2;
+    }
+    if (string === "subtract") {
+        return n1 - n2;
+    }
+    if (string === "multiply") {
+        return n1 * n2;
+    }
+    if (string === "div") {
+        return n1/n2;
+        
+    }
+    else {
+        return 0;
+    }
+}
+
+console.log(addAndSubString("add", 4, 5));
+console.log(addAndSubString("multiply", 8, 9));
+console.log(addAndSubString("add", 4, "dog"));
+console.log(addAndSubString("pumpkin", 4, "dog"));
+
+
+
+
 
 
 
