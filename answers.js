@@ -103,7 +103,22 @@ function repeatString (string, number) {
 }
 
 console.log(repeatString("hello", 3));
+// used repeat function
 
+
+
+// question 8 reverse the string
+
+function reverseString (string) {
+   return string.split('').reverse().join('');
+ 
+}
+
+console.log(reverseString("hello"))
+
+// I split the string so the characters are separated, reversed while separated, then joined them again to give result
+
+console.log(reverseString("yikes"))
 
 
 
