@@ -36,9 +36,26 @@ console.log (returnCharAndNumber("Boston", 5));
 
 console.log (returnCharAndNumber("Studebaker", 3));
 
+/* returns nothing */
+
 console.log (returnCharAndNumber(" ", 5));
 
 console.log (returnCharAndNumber("Boston", 25));
+
+function addNumbers (n1, n2) {
+    return n1 + n2;
+}
+console.log (addNumbers (4, 7))
+console.log (addNumbers (44, 746))
+console.log (addNumbers ("banana", 7))
+
+/* running "banana" caused a mild hissy fit because "banana" is not defined */
+
+console.log (addNumbers ("banana", "chair"))
+
+
+
+
 
 
 
