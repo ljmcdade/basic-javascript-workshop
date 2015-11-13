@@ -117,12 +117,50 @@ function reverseString (string) {
 console.log(reverseString("hello"))
 
 // I split the string so the characters are separated, reversed while separated, then joined them again to give result
+//otherwise "," will appear between characters
 
 console.log(reverseString("yikes"))
 
 
+//question 9  factorials
 
 
+
+var factorial = function(n) {
+    if(n === 0) {
+        return 1
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+ 
+console.log(factorial(5));
+
+// function within a function. 
+
+function factorialNumber(number) {
+    var result = number;
+    if (n === 0) {
+        return 1;
+    }
+    else
+    for (var i=number; i <= number; ++i){
+    return i * (i - 1);
+    }
+}
+console.log(factorialNumber(5))
+
+
+function factorialNumber(number) {
+    var result = 1;
+    //looping 1 to 5
+    for (var i=1; i <= number; i++) {
+       result = result * i;
+    }
+        return result;
+    
+}
+console.log(factorialNumber(5))
 
 
 
