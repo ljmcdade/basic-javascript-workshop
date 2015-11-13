@@ -96,6 +96,17 @@ console.log(addAndSubString("add", 4, "dog"));
 console.log(addAndSubString("pumpkin", 4, "dog"));
 
 
+//question 7 returns the string as many times as the number
+
+function repeatString (string, number) {
+    return string.repeat(number);
+}
+
+console.log(repeatString("hello", 3));
+
+
+
+
 
 
 
