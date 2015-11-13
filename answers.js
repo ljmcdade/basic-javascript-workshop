@@ -15,6 +15,18 @@ console.log(firstLetter("Lauren"));
 console.log(firstLetter("Peter"));
 console.log(firstLetter(" "));
 
+/* Question 2 -- last letter*/
+function lastLetter(string) {
+    return string.charAt(string.length - 1);
+}
+console.log(lastLetter("Felicity"));
+
+console.log(lastLetter("Clarissa"));
+
+console.log(lastLetter(" "));
+
+
+
 
 
 
