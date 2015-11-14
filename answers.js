@@ -187,7 +187,7 @@ console.log(longestWordInPhrase("I am really really stupendously tired"))
 
 //question 11 capitalize all words in a phrase
 
-//slice selects elements in an array
+//slice selects elements in an array -- push adds to array
 
 function capEachWord (phrase) {
     var phraseArray = phrase.split(" ");
@@ -209,7 +209,29 @@ function capEachWord (phrase) {
 console.log(capEachWord("I'm so very very exhausted, seriously"))
 
 
+
 //question 12 returns largest number of an array
+
+function largestInArray(array) {
+
+    //var array = [3, 6, 2, 56, 32, 5, 89, 32];
+    var largest = 0;
+    
+    for (var i=0; i < array.length; i++) {
+        
+        if (array[i] > largest) {
+            
+            largest = array[i];
+        }
+    }
+    
+    return largest;
+}
+    
+console.log(largestInArray([23, 8, 25, 99, 107, 32]));
+
+
+
 
 
 
