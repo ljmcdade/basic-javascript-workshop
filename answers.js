@@ -177,14 +177,49 @@ function longestWordInPhrase (phrase) {
         if (result[i].length > word.length){
         word = result[i];
         }
-        }
+    }
         return word;
 }
 
 console.log(longestWordInPhrase("I am really really stupendously tired"))
 
-//split 
+//split the words into an Array, then got length of each word, checked the length against previous result
 
+//question 11 capitalize all words in a phrase
+
+//slice selects elements in an array
+
+function capEachWord (phrase) {
+    var phraseArray = phrase.split(" ");
+    var resultArray = [];
+   
+    for (var i=0; i < phraseArray.length; i++) {
+    
+        var firstLetter = phraseArray[i].charAt(0).toUpperCase();
+        var restOfWord = phraseArray[i].slice(1);
+        
+        var recomposedWord = firstLetter + restOfWord;
+        
+        resultArray.push(recomposedWord); 
+    }
+    
+    
+    return resultArray.join(" ");
+}
+console.log(capEachWord("I'm so very very exhausted, seriously"))
+
+
+//question 12 returns largest number of an array
+
+
+
+//question 13 takes an array and returns a filtered array
+
+
+//question 14 takes an array and returns sum of all numbers
+
+
+//question 15 takes 2 arrays returns array of unique elements only -- indexOf and slice
 
 
 
