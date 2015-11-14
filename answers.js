@@ -153,7 +153,7 @@ console.log(factorialNumber(5))
 
 function factorialNumber(number) {
     var result = 1;
-    //looping 1 to 5
+    //looping 1 to 5 and including the result
     for (var i=1; i <= number; i++) {
        result = result * i;
     }
@@ -162,8 +162,28 @@ function factorialNumber(number) {
 }
 console.log(factorialNumber(5))
 
+//The above solution is the easiest for me to understand because of the looping
 
+//question 10 return longest word in phrase
 
+function longestWordInPhrase (phrase) {
+    var result = phrase.split(' ')
+    console.log(result);
+    var longest = 0;
+    var word = '';
+    //set empty string outside loop
+    
+        for (var i=0; i < result.length; i++) {
+        if (result[i].length > word.length){
+        word = result[i];
+        }
+        }
+        return word;
+}
+
+console.log(longestWordInPhrase("I am really really stupendously tired"))
+
+//split 
 
 
 
