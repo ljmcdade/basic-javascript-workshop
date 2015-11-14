@@ -235,7 +235,20 @@ console.log(largestInArray([23, 8, 25, 99, 107, 32]));
 
 
 
-//question 13 takes an array and returns a filtered array
+//question 13 takes an array and returns a filtered array  -- use "filter"
+
+var array = [true, false, true, 0, 1];
+
+function truthyArray(array) {
+    var resultArray = [];
+    for (var i=0; i < array.length; i++) {
+        if (array[i]) {
+            resultArray.push(array[i]);
+        }
+    }
+    return resultArray;
+}
+console.log(truthyArray([true, false, 0, 1, true]))
 
 
 //question 14 takes an array and returns sum of all numbers
