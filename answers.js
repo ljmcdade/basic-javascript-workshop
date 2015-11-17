@@ -242,8 +242,8 @@ var array = [true, false, true, 0, 1];
 function truthyArray(array) {
     var resultArray = [];
     for (var i=0; i < array.length; i++) {
-        if (array[i]) {
-            resultArray.push(array[i]);
+        if (array[i]) {                     //this will automatically be truthy
+            resultArray.push(array[i]);  //push adds to array
         }
     }
     return resultArray;
@@ -251,7 +251,20 @@ function truthyArray(array) {
 console.log(truthyArray([true, false, 0, 1, true]))
 
 
+
+
 //question 14 takes an array and returns sum of all numbers
+
+var list = [3, 7, 44, 92];
+
+function arraySum(array) { //parameter declaration
+    var sum =0;
+    for (var i=0; i < array.length; ++i) {
+        sum += array[i]; //add each element in array to sum
+    }
+    return sum; //return sum of elements in array
+}
+console.log(arraySum(list)); //argument declaration
 
 
 //question 15 takes 2 arrays returns array of unique elements only -- indexOf and slice
